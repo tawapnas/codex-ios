@@ -1,0 +1,191 @@
+// !$*UTF8*$!
+{
+archiveVersion = 1;
+classes = {};
+objectVersion = 52;
+objects = {
+
+/* Begin PBXBuildFile section */
+1A1B1C1D1E1F200100000000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B1C1D1E1F200200000000; };
+1A1B1C1D1E1F200300000000 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B1C1D1E1F200400000000; };
+1A1B1C1D1E1F200500000000 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B1C1D1E1F200600000000; };
+1A1B1C1D1E1F200700000000 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B1C1D1E1F200800000000; };
+1A1B1C1D1E1F200900000000 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B1C1D1E1F200A00000000; };
+1A1B1C1D1E1F200B00000000 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B1C1D1E1F200C00000000; };
+1A1B1C1D1E1F200D00000000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1B1C1D1E1F200E00000000; };
+1A1B1C1D1E1F200F00000000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1B1C1D1E1F201000000000; };
+1A1B1C1D1E1F201100000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A1B1C1D1E1F201200000000; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+1A1B1C1D1E1F200200000000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+1A1B1C1D1E1F200400000000 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+1A1B1C1D1E1F200600000000 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controllers/MealsViewController.swift; sourceTree = "<group>"; };
+1A1B1C1D1E1F200800000000 /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controllers/AddMealViewController.swift; sourceTree = "<group>"; };
+1A1B1C1D1E1F200A00000000 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/MealTableViewCell.swift; sourceTree = "<group>"; };
+1A1B1C1D1E1F200C00000000 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Meal.swift; sourceTree = "<group>"; };
+1A1B1C1D1E1F200E00000000 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+1A1B1C1D1E1F201000000000 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+1A1B1C1D1E1F201200000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+1A1B1C1D1E1F201300000000 /* MealPlanner */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MealPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+1A1B1C1D1E1F201400000000 /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+1A1B1C1D1E1F201500000000 = {
+isa = PBXGroup;
+children = (
+1A1B1C1D1E1F201600000000 /* MealPlanner */,
+1A1B1C1D1E1F201700000000 /* Products */,
+);
+sourceTree = "<group>";
+};
+1A1B1C1D1E1F201600000000 /* MealPlanner */ = {
+isa = PBXGroup;
+children = (
+1A1B1C1D1E1F200200000000,
+1A1B1C1D1E1F200400000000,
+1A1B1C1D1E1F200600000000,
+1A1B1C1D1E1F200800000000,
+1A1B1C1D1E1F200A00000000,
+1A1B1C1D1E1F200C00000000,
+1A1B1C1D1E1F200E00000000,
+1A1B1C1D1E1F201000000000,
+1A1B1C1D1E1F201200000000,
+);
+path = MealPlanner;
+sourceTree = "<group>";
+};
+1A1B1C1D1E1F201700000000 /* Products */ = {
+isa = PBXGroup;
+children = (
+1A1B1C1D1E1F201300000000,
+);
+name = Products;
+sourceTree = "<group>";
+};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+1A1B1C1D1E1F201800000000 /* MealPlanner */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = 1A1B1C1D1E1F202400000000;
+buildPhases = (
+1A1B1C1D1E1F201900000000 /* Sources */, 
+1A1B1C1D1E1F201400000000 /* Frameworks */, 
+1A1B1C1D1E1F201A00000000 /* Resources */,
+);
+buildRules = (
+);
+dependencies = (
+);
+name = MealPlanner;
+productName = MealPlanner;
+productReference = 1A1B1C1D1E1F201300000000;
+productType = "com.apple.product-type.application";
+};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+1A1B1C1D1E1F201B00000000 = {
+isa = PBXProject;
+attributes = {
+LastUpgradeCheck = 1600;
+};
+buildConfigurationList = 1A1B1C1D1E1F202400000000;
+compatibilityVersion = "Xcode 13.0";
+developmentRegion = en;
+hasScannedForEncodings = 0;
+knownRegions = (
+en,
+);
+mainGroup = 1A1B1C1D1E1F201500000000;
+productRefGroup = 1A1B1C1D1E1F201700000000;
+projectDirPath = "";
+projectRoot = "";
+targets = (
+1A1B1C1D1E1F201800000000,
+);
+};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+1A1B1C1D1E1F201A00000000 /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+1A1B1C1D1E1F200D00000000,
+1A1B1C1D1E1F200F00000000,
+1A1B1C1D1E1F201100000000,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+1A1B1C1D1E1F201900000000 /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+1A1B1C1D1E1F200100000000,
+1A1B1C1D1E1F200300000000,
+1A1B1C1D1E1F200500000000,
+1A1B1C1D1E1F200700000000,
+1A1B1C1D1E1F200900000000,
+1A1B1C1D1E1F200B00000000,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+1A1B1C1D1E1F202000000000 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+PRODUCT_BUNDLE_IDENTIFIER = "com.example.MealPlanner";
+INFOPLIST_FILE = MealPlanner/Info.plist;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+TARGETED_DEVICE_FAMILY = "1";
+};
+name = Debug;
+};
+1A1B1C1D1E1F202200000000 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+PRODUCT_BUNDLE_IDENTIFIER = "com.example.MealPlanner";
+INFOPLIST_FILE = MealPlanner/Info.plist;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+TARGETED_DEVICE_FAMILY = "1";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+};
+name = Release;
+};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+1A1B1C1D1E1F202400000000 = {
+isa = XCConfigurationList;
+buildConfigurations = (
+1A1B1C1D1E1F202000000000,
+1A1B1C1D1E1F202200000000,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+/* End XCConfigurationList section */
+
+};
+}
