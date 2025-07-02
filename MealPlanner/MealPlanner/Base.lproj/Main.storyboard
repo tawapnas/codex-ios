@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="NC">
+    <scenes>
+        <scene sceneID="NavScene">
+            <objects>
+                <navigationController id="NC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NavBar" customClass="UINavigationBar"/>
+                    <connections>
+                        <segue destination="MealsVC" kind="relationship" relationship="rootViewController" id="NavRoot"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NavResponder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <scene sceneID="MealsScene">
+            <objects>
+                <tableViewController id="MealsVC" customClass="MealsViewController" sceneMemberID="viewController">
+                    <tableView key="view" id="MealsTable">
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" reuseIdentifier="MealCell" id="MealCell" customClass="MealTableViewCell">
+                                <subviews>
+                                    <label id="TitleLabel" text="Title" userLabel="titleLabel"/>
+                                    <segmentedControl id="TypeSeg" userLabel="typeSegmentedControl">
+                                        <segments>
+                                            <segment title="Breakfast"/>
+                                            <segment title="Lunch"/>
+                                            <segment title="Dinner"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <switch id="VegSwitch" userLabel="vegetarianSwitch"/>
+                                    <textField id="NotesField" placeholder="Notes" userLabel="notesTextField"/>
+                                </subviews>
+                                <connections>
+                                    <outlet property="titleLabel" destination="TitleLabel" id="outlet-title"/>
+                                    <outlet property="typeSegmentedControl" destination="TypeSeg" id="outlet-type"/>
+                                    <outlet property="vegetarianSwitch" destination="VegSwitch" id="outlet-veg"/>
+                                    <outlet property="notesTextField" destination="NotesField" id="outlet-notes"/>
+                                    <action selector="typeChanged:" destination="MealCell" eventType="valueChanged" id="action-type"/>
+                                    <action selector="vegetarianToggled:" destination="MealCell" eventType="valueChanged" id="action-veg"/>
+                                    <action selector="notesEdited:" destination="MealCell" eventType="editingChanged" id="action-notes"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MealsResponder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <scene sceneID="AddMealScene">
+            <objects>
+                <viewController id="AddMealVC" customClass="AddMealViewController" sceneMemberID="viewController">
+                    <view key="view" id="AddMealView">
+                        <subviews>
+                            <textField id="AddTitleField" placeholder="Title" userLabel="titleTextField"/>
+                            <segmentedControl id="AddTypeSeg" userLabel="typeSegmentedControl">
+                                <segments>
+                                    <segment title="Breakfast"/>
+                                    <segment title="Lunch"/>
+                                    <segment title="Dinner"/>
+                                </segments>
+                            </segmentedControl>
+                            <switch id="AddVegSwitch" userLabel="vegetarianSwitch"/>
+                            <textView id="AddNotesView" userLabel="notesTextView"/>
+                        </subviews>
+                        <connections>
+                            <outlet property="titleTextField" destination="AddTitleField" id="outlet-add-title"/>
+                            <outlet property="typeSegmentedControl" destination="AddTypeSeg" id="outlet-add-type"/>
+                            <outlet property="vegetarianSwitch" destination="AddVegSwitch" id="outlet-add-veg"/>
+                            <outlet property="notesTextView" destination="AddNotesView" id="outlet-add-notes"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AddResponder" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
